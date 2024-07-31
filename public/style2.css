@@ -1,0 +1,70 @@
+html {
+  --s: 200px; /* Controla el tamaño del logo */
+  
+  /* Define el patrón de cuadrícula con el logo */
+  background: 
+    url('/images/logoAntr.png') repeat;
+  background-size: var(--s) var(--s);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: url('/images/logo.png') repeat; /* Cuadrícula del logo */
+  background-size: var(--s) var(--s);
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+.counter-display {
+  margin-bottom: 20px;
+}
+
+.counter-display h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.counter {
+  background-color: #b0b0b0;
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+.counter span {
+  font-size: 48px;
+  font-weight: bold;
+  color: #000;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 150px; /* Ajusta el tamaño según tus necesidades */
+  display: block;
+  margin: 0 auto 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Latas</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" href="/images/logoAntrax2.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <img src="/images/logoAntrax2.png" alt="Logo" class="logo">
+        <div class="user-info">
+            <p id="user">Bienvenido! <span id="username"></span></p>
+        </div>
+        <div class="counter-display">
+            <h1>Latas procesadas:</h1>
+            <div class="counter">
+                <span id="count">0000</span>
+            </div>
+        </div>
+        <div class="button-container">
+            <button id="start">Iniciar</button>
+            <button id="stop">Detener</button>
+            <button id="reset">Reiniciar</button>
+            <button id="logout">Salir</button>
+        </div>
+        <p id="status"></p>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

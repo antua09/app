@@ -1,0 +1,120 @@
+html {
+    --s: 200px; /* Controla el tamaño del logo */
+    
+    /* Define el patrón de cuadrícula con el logo */
+    background: 
+      url('/images/logoAntrax2.png') repeat;
+    background-size: var(--s) var(--s);
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: larger;
+}
+
+.form-container {
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form + p, form p {
+    text-align: center;
+}
+
+input, button {
+    border-radius: 4px;
+    border: unset;
+    padding: 15px 30px;
+    font-size: larger;
+}
+
+button {
+    background-color: #00ef00a0;
+    
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.error {
+    color: rgb(255, 81, 81);
+}
+
+.escondido {
+    display: none;
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.logo {
+    width: 150px; /* Ajusta el tamaño según tus necesidades */
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    .form-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    input, button {
+        padding: 10px 20px;
+        font-size: medium;
+    }
+
+    body {
+        font-size: medium;
+        padding: 10px;
+    }
+
+    .welcome-container {
+        background-color: white;
+        padding: 50px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+      
+    .welcome-container h1 {
+        margin-bottom: 20px;
+    }
+      
+    .welcome-container p {
+        margin-bottom: 20px;
+        font-size: larger;
+    }
+      
+    .welcome-container button {
+        padding: 15px 30px;
+        font-size: larger;
+        border: none;
+        border-radius: 4px;
+        background-color: #00ef00a0;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+    }
+}
