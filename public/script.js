@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Conectar a Socket.IO
-  socket = io();
+  //socket = io(); // Asegúrate de que esta conexión apunte a tu servidor de producción
 
   // Manejar los datos recibidos del sensor
   socket.on('sensorData', (data) => {
