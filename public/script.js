@@ -10,7 +10,7 @@ function updateCount() {
 function showSummary() {
   const totalAmount = (count * pricePerCan).toFixed(2);
   const totalWeight = (count * weightPerCan).toFixed(2);
-  alert(`Latas procesadas: ${count}\nCantidad a pagar: $${totalAmount}\nPeso total aprox: ${totalWeight} gramos`);
+  alert(Latas procesadas: ${count}\nCantidad a pagar: $${totalAmount}\nPeso total aprox: ${totalWeight} gramos);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -25,11 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Conectar a Socket.IO
-  //socket = io(); // Asegúrate de que esta conexión apunte a tu servidor de producción
+  socket = io();
 
   // Manejar los datos recibidos del sensor
   socket.on('sensorData', (data) => {
-    document.getElementById('status').innerText = ``;
+    document.getElementById('status').innerText = `;
     if (data === '0') {
       count++;
       updateCount();
